@@ -4,7 +4,7 @@ React = require('react');
 ReactNative = require('react-native');
 
 RNSearchBar = ReactNative.requireNativeComponent('RNSearchBar', null);
-PropTypes = ReactNative.PropTypes;
+PropTypes = React.PropTypes;
 NativeModules = ReactNative.NativeModules;
 
 SearchBar = React.createClass({
