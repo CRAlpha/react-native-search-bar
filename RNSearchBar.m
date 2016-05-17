@@ -13,7 +13,7 @@
   NSInteger _nativeEventCount;
 }
 
-@synthesize hideCancelButton;
+@synthesize hidesCancelButton;
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
 {
@@ -37,7 +37,7 @@
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
-  if(self.hideCancelButton == NO){
+  if(self.hidesCancelButton == NO){
     [self setShowsCancelButton:YES animated:YES];
   }
 
