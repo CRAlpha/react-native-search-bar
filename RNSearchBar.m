@@ -37,7 +37,7 @@
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
-  if(self.hidesCancelButton == NO){
+  if (self.hidesCancelButton == NO){
     [self setShowsCancelButton:YES animated:YES];
   }
 
