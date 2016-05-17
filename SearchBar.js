@@ -50,10 +50,10 @@ SearchBar = React.createClass({
     }
   },
   blur: function() {
-    return NativeModules.RNSearchBarManager.blur(React.findNodeHandle(this));
+    return NativeModules.RNSearchBarManager.blur(ReactNative.findNodeHandle(this));
   },
   focus: function() {
-    return NativeModules.RNSearchBarManager.focus(React.findNodeHandle(this));
+    return NativeModules.RNSearchBarManager.focus(ReactNative.findNodeHandle(this));
   },
   render: function() {
     return <RNSearchBar
