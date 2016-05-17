@@ -15,7 +15,7 @@ SearchBar = React.createClass({
     tintColor: PropTypes.string,
     textColor: PropTypes.string,
     textFieldBackgroundColor: PropTypes.string,
-    showsCancelButton: PropTypes.bool,
+    hidesCancelButton: PropTypes.bool,
     onChange: PropTypes.func,
     onChangeText: PropTypes.func,
     onFocus: PropTypes.func,

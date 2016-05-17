@@ -13,6 +13,8 @@
   NSInteger _nativeEventCount;
 }
 
+@synthesize hideCancelButton;
+
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
 {
   if ((self = [super initWithFrame:CGRectMake(0, 0, 1000, 44)])) {
@@ -29,14 +31,15 @@
                                        text:searchBar.text
                                         key:nil
                                  eventCount:_nativeEventCount];
-    
+
 }
 
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
-  [self setShowsCancelButton:YES animated:YES];
-
+  if(self.hideCancelButton == NO){
+    [self setShowsCancelButton:YES animated:YES];
+  }
 
   [_eventDispatcher sendTextEventWithType:RCTTextEventTypeFocus
                                  reactTag:self.reactTag
